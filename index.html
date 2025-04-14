@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --accent: #007aff;
+      --muted: #666;
+    }
+
+    body.dark {
+      --bg: #0f0f0f;
+      --text: #eaeaea;
+      --accent: #00bcd4;
+      --muted: #999;
+    }
+
+    body.pastel {
+      --bg: #fff7f0;
+      --text: #4b2e2e;
+      --accent: #f97b72;
+      --muted: #a47575;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #005bb5;
+    }
+
+    .theme-switcher {
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .theme-switcher button {
+      margin: 0 0.5rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+      background: none;
+      color: var(--text);
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .theme-switcher button:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 4rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resume {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+  <header>
+
+    <div class="theme-switcher">
+      <p>Theme:</p>
+      <button onclick="setTheme('light')">Light</button>
+      <button onclick="setTheme('dark')">Dark</button>
+      <button onclick="setTheme('pastel')">Pastel</button>
+    </div>
+    <script>
+      function setTheme(theme) {
+        document.body.className = theme;
+      }
+    </script>
+
+    <img src="IMG-20250312-250.jpg" alt="Profile Picture" />
+    <h1>Alberto Ueda</h1>
+    <p>PhD Student • Computer Science • UFMG</p>
+<!--     <nav>
+      <a href="#about">About</a>
+      <a href="#edu">Education</a>
+ -->      <!-- <a href="#work">Work</a> -->
+      <!-- <a href="#contact">Contact</a> -->
+    </nav>
+    <div class="resume">
+      <a href="2024-CV___Alberto_Ueda__EN_.pdf" class="btn" download>Download Résumé</a>
+    </div>
+
+
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I’m a PhD student in Computer Science at the Federal University of Minas Gerais (<a href="https://ufmg.br/international-visitors">UFMG</a>), in Brazil. I am advised by professor <a href="https://homepages.dcc.ufmg.br/~rodrygo/">Rodrygo Santos</a>.</p>
+  </section>
+    
+  <section id="edu">
+  <h2>Education</h2>
+    <p> I earned my Master Degree in Computer Science from UFMG in 2017 and a Bachelor Degree in Computer Science from Universidade de São Paulo (<a href="https://www.usp.br">USP</a>) in 2012.</p>
+  </section>
+
+<!--   <section id="work">
+    <h2>Work</h2>
+
+  </section> -->
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:albertoueda[at]gmail[dot]com">albertoueda [at] gmail.com</a> .</p>
+    <!-- <p>You can reach me at albertoueda [at] gmail.com .</p> -->
+    <!-- <p>Here’s a collection of my recent personal and freelance work, spanning visual design, frontend, and experimental art.</p> -->
+
+    <ul style="margin-top: 1rem; padding-left: 3rem; list-style-type: disc;">
+      <li><a href='https://www.linkedin.com/in/alberto-ueda-a479b630'>Linkedin</a></li>
+      <li><a href='http://lattes.cnpq.br/3081240500545618'>Lattes</a></li>
+      <li><a href='https://scholar.google.com.br/citations?hl=en&user=GgMtDlgAAAAJ'>Google Scholar</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <!-- &copy; -->
+     <!-- albertoueda@gmail.com -->
+     <!-- Belo Horizonte - Brazil -->
+  </footer>
+
+
+</body>
+</html>
